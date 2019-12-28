@@ -119,7 +119,7 @@ void HistoryWindow::OnWaveformDataReady(Oscilloscope* scope)
 	}
 
 	//No channels at all? Nothing to do
-	if(chan == NULL)
+	if(chan == NULL || data == NULL)
 		return;
 
 	m_updating = true;
